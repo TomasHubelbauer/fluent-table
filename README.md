@@ -24,17 +24,18 @@ CRA app and Fluent.
 
 I went to `fluent-ui-react` and ran `yarn` to install its dependencies. Then `yarn start` to
 verify it was building correctly and see that the Table component has its component page at
-http://localhost:8080. Then I ran `yarn build` to build all the packages.
+http://localhost:8080. Next I link CRA's `react` and `react-dom` to Fluent's so that we avoid
+dealing with two versions of either. Then I ran `yarn build` to build all the packages.
 
 Next I went to `fluent-ui-react/packages/react` and renamed it to `@stardust-ui/react`. This
 is because it would otherwise use its new name which is already in `master` but not yet live.
 We need the live name because we installed `@stardust-ui/react` in the CRA app because that's
 what the currently live package is named. To replace it with the link, we need the link to be
-called the same. I ran `yarn link` and then went back to the root and ran
-`yarn link @stardust-ui/react`. This ensured that I am not using the version from the NPM
-registry but instead the one built locally, which includes the Table component.
-I also changed the `react` and `react-dom` versions in the CRA app to match the ones in Fluent.
+called the same.
 
-This configuration resulted in two copies of React so it's no good anyway.
+I ran `yarn link` and then went back to the root and ran `yarn link @stardust-ui/react`. This
+ensured that I am not using the version from the NPM registry but instead the one built locally,
+which includes the Table component.
 
+This process is formalized in `setup.sh`.
 To run, run `yarn start` and visit http://localhost:3000.
