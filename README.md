@@ -39,3 +39,26 @@ which includes the Table component.
 
 This process is formalized in `setup.sh`.
 To run, run `yarn start` and visit http://localhost:3000.
+
+## To-Do
+
+### Implement filtering
+
+Make use of header row rich content to embed filter popups for each header cell.
+
+### Implement sorting
+
+Make use of header row rich content to embed a sorting toggle button for each header cell.
+
+### Implement searching
+
+Embed a search input atop the table which when changed reloads the table with filtered data.
+
+### Implement loading
+
+Add a switch for demonstrating faux-async loading state to demonstrate a loading indicator.
+
+### Implement resizing
+
+Use cells rich content to embed resizing handles and generate stylesheet affecting columns
+changing their ratio in response to the resizing.
