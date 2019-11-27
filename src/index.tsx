@@ -1,12 +1,12 @@
 import "./index.css";
 import React from "react";
 import { render } from "react-dom";
-import * as Fluent from "./fluent-ui-react/packages/react/dist/umd/stardust-ui-react.min";
+import { Provider, themes } from "@stardust-ui/react";
 import App from "./App";
 
 render(
-  <Fluent.Provider theme={Fluent.themes.teams}>
+  <Provider theme={themes.teams}>
     <App />
-  </Fluent.Provider>,
+  </Provider>,
   document.getElementById("root")
 );

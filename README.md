@@ -15,5 +15,26 @@ https://github.com/npm/cli/issues/528
 
 I _could_ add it as a submodule and then try to build the submodule first and import Fluent
 as local files from the submodule's `dist`, but I tried that and it didn't work, importing
-CJS/ESM/UMD this way is just a pain in the ass. It could work though and as submodules get
-cloned at their default branch as normal repositories, we'd be at `master` and have Table.
+CJS/ESM/UMD this way is just a pain in the ass.
+
+I am still using submodules, but instead of importing locally, I am using linking. Fluent
+is still named Stardust at the package level as we're in the midst of a name transition and
+the linking might be iffy when mixing NPM and Yarn so I switched to using Yarn for both the
+CRA app and Fluent.
+
+I went to `fluent-ui-react` and ran `yarn` to install its dependencies. Then `yarn start` to
+verify it was building correctly and see that the Table component has its component page at
+http://localhost:8080. Then I ran `yarn build` to build all the packages.
+
+Next I went to `fluent-ui-react/packages/react` and renamed it to `@stardust-ui/react`. This
+is because it would otherwise use its new name which is already in `master` but not yet live.
+We need the live name because we installed `@stardust-ui/react` in the CRA app because that's
+what the currently live package is named. To replace it with the link, we need the link to be
+called the same. I ran `yarn link` and then went back to the root and ran
+`yarn link @stardust-ui/react`. This ensured that I am not using the version from the NPM
+registry but instead the one built locally, which includes the Table component.
+I also changed the `react` and `react-dom` versions in the CRA app to match the ones in Fluent.
+
+This configuration resulted in two copies of React so it's no good anyway.
+
+To run, run `yarn start` and visit http://localhost:3000.

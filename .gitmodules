@@ -1,0 +1,3 @@
+[submodule "fluent-ui-react"]
+	path = fluent-ui-react
+	url = https://github.com/microsoft/fluent-ui-react.git

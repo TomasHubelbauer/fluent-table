@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
-import * as Fluent from "./fluent-ui-react/packages/react/dist/umd/stardust-ui-react.min";
+import { Table } from "@stardust-ui/react";
 
 export default function App() {
   return (
-    <Fluent.Table
+    <Table
       header={["a", "b", "c"]}
       rows={[
         [1, 2, 3],
