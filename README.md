@@ -42,10 +42,6 @@ To run, run `yarn start` and visit http://localhost:3000.
 
 ## To-Do
 
-### Implement filtering
-
-Make use of header row rich content to embed filter popups for each header cell.
-
 ### Implement sorting
 
 Make use of header row rich content to embed a sorting toggle button for each header cell.
