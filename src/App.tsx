@@ -1,13 +1,14 @@
 import "./App.css";
 import React from "react";
 import FilteringTable from "./FilteringTable";
+import SortingTable from "./SortingTable";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Fluent Table Tools</h1>
-      <h2>Filtering</h2>
       <FilteringTable />
+      <SortingTable />
     </div>
   );
 }

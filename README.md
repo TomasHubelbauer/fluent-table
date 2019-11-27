@@ -42,10 +42,6 @@ To run, run `yarn start` and visit http://localhost:3000.
 
 ## To-Do
 
-### Implement sorting
-
-Make use of header row rich content to embed a sorting toggle button for each header cell.
-
 ### Implement searching
 
 Embed a search input atop the table which when changed reloads the table with filtered data.
@@ -58,3 +54,22 @@ Add a switch for demonstrating faux-async loading state to demonstrate a loading
 
 Use cells rich content to embed resizing handles and generate stylesheet affecting columns
 changing their ratio in response to the resizing.
+
+### Implement theming
+
+Demonstrate using variables to control the theming.
+
+### Implement selecting
+
+Demonstrates check box rich content
+
+### Implement actioning
+
+Demonstrates button rich content
+
+### Extend filtering
+
+Demonstrate filtering on a value which is rendered using a dropdown in its cell
+and updating the filter (by removing the row) when the dropdown changes.
+
+### Document each example
