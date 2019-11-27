@@ -1,24 +1,15 @@
 import "./App.css";
 import React from "react";
+import * as Fluent from "./fluent-ui-react/packages/react/dist/umd/stardust-ui-react.min";
 
-const App: React.FC = () => {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fluent.Table
+      header={["a", "b", "c"]}
+      rows={[
+        [1, 2, 3],
+        [4, 5, 6]
+      ]}
+    />
   );
-};
-
-export default App;
+}
