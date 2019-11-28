@@ -54,7 +54,3 @@ changing their ratio in response to the resizing.
 ### Implement theming
 
 Demonstrate using variables to control the theming.
-
-### Implement actioning
-
-Demonstrates button rich content
