@@ -44,11 +44,6 @@ To run, run `yarn start` and visit http://localhost:3000.
 
 ## To-Do
 
-### Implement resizing
-
-Use cells rich content to embed resizing handles and generate stylesheet affecting columns
-changing their ratio in response to the resizing.
-
 ### Implement theming
 
 Demonstrate using variables to control the theming.

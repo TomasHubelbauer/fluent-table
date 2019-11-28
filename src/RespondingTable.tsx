@@ -6,16 +6,17 @@ import calculateBreakpoints, {
   Breakpoint
 } from "./calculateBreakpoints";
 
+const _columns: Column[] = [
+  { weight: 3, ratio: 1, limit: 150 },
+  { weight: 2, ratio: 3, limit: 350 },
+  { weight: 0, ratio: 2, limit: 100 }
+];
+
 export default function RespondingTable() {
   const [breakpoints, setBreakpoints] = useState<Breakpoint[]>();
 
   // Generate the stylesheet once and for all
   useEffect(() => {
-    const _columns: Column[] = [
-      { weight: 3, ratio: 1, limit: 150 },
-      { weight: 2, ratio: 3, limit: 350 },
-      { weight: 0, ratio: 2, limit: 100 }
-    ];
     const breakpoints = Array.from(calculateBreakpoints(_columns, { _: 16 }));
     setBreakpoints(breakpoints);
   }, []);
@@ -35,6 +36,11 @@ export default function RespondingTable() {
         This is done using CSS media queries and not using JavaScript. Resize
         the window to observe the effect in action.
       </p>
+      <p>
+        <a href="https://github.com/TomasHubelbauer/html-responsive-table">
+          The responsivity repo
+        </a>
+      </p>
       {breakpoints &&
         breakpoints.map((breakpoint, index) => (
           <p key={index}>
@@ -50,6 +56,14 @@ export default function RespondingTable() {
           </p>
         ))}
       <style>
+        {_columns
+          .map(
+            (c, i) =>
+              `#RespondingTable .ui-table__cell:nth-child(${i + 1}) { flex: ${
+                c.ratio
+              }; }`
+          )
+          .join("\n")}
         {breakpoints &&
           breakpoints.map(
             breakpoint => `
