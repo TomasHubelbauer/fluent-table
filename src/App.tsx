@@ -6,6 +6,7 @@ import EmbeddingTable from "./EmbeddingTable";
 import SearchingTable from "./SearchingTable";
 import SelectingTable from "./SelectingTable";
 import ActioningTable from "./ActioningTable";
+import LoadingTable from "./LoadingTable";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <SearchingTable />
       <SelectingTable />
       <ActioningTable />
+      <LoadingTable />
     </div>
   );
 }

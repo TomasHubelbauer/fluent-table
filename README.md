@@ -42,10 +42,6 @@ To run, run `yarn start` and visit http://localhost:3000.
 
 ## To-Do
 
-### Implement loading
-
-Add a switch for demonstrating faux-async loading state to demonstrate a loading indicator.
-
 ### Implement resizing
 
 Use cells rich content to embed resizing handles and generate stylesheet affecting columns
@@ -54,3 +50,8 @@ changing their ratio in response to the resizing.
 ### Implement theming
 
 Demonstrate using variables to control the theming.
+
+### Fix the CI/CD
+
+Wait for the submodule repo to be public again.
+Run `setup.sh` to set up the interlinking correctly.
