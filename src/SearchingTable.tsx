@@ -34,7 +34,8 @@ export default function SearchingTable() {
       <p>
         This example demonstrates a Fluent Table equipped with a search bar. The
         search bar can sit within the table or outside of it. The implementation
-        of search is left to the user.
+        of search is left to the user. In this instance, rows where any cell
+        includes the search strings are returned.
       </p>
       <style>{style}</style>
       <Table>

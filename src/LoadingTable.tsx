@@ -58,7 +58,6 @@ export default function LoadingTable() {
         change is being persisted.
       </p>
       <style>{style}</style>
-      {JSON.stringify(op)}
       <Table>
         <TableRow header>
           {keys.map(key => (
