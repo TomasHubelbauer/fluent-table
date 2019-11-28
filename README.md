@@ -55,10 +55,6 @@ changing their ratio in response to the resizing.
 
 Demonstrate using variables to control the theming.
 
-### Implement selecting
-
-Demonstrates check box rich content
-
 ### Implement actioning
 
 Demonstrates button rich content
