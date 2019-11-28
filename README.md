@@ -1,5 +1,7 @@
 # Fluent Table Tools
 
+[**LIVE**](https://tomashubelbauer.github.io/fluent-table-tools)
+
 This repository demonstrates how to implement filtering, sorting, searching and loading on
 top of the Table component from
 [Microsoft's Fluent UI library](https://github.com/microsoft/fluent-ui-react).
