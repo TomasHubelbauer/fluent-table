@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fluent-table-tools/precache-manifest.2e89eb7da02252725c0ea4021b77af47.js"
+  "/fluent-table-tools/precache-manifest.a6b8a36e2a7469842d6c00422b289561.js"
 );
 
 self.addEventListener('message', (event) => {
