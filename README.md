@@ -42,10 +42,6 @@ To run, run `yarn start` and visit http://localhost:3000.
 
 ## To-Do
 
-### Implement searching
-
-Embed a search input atop the table which when changed reloads the table with filtered data.
-
 ### Implement loading
 
 Add a switch for demonstrating faux-async loading state to demonstrate a loading indicator.

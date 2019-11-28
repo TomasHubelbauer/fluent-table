@@ -4,12 +4,12 @@ import { Table, TableRow, TableCell } from "@stardust-ui/react";
 
 export default function SortingTable() {
   const style = `
-.SortingTable input {
+#SortingTable input {
   margin-left: auto;
   visibility: hidden;
 }
 
-.SortingTable input::after {
+#SortingTable input::after {
   content: '-';
   cursor: pointer;
   outline: 1px solid silver;
@@ -17,15 +17,15 @@ export default function SortingTable() {
   visibility: visible;
 }
 
-.SortingTable input[data-order="ascending"]::after {
+#SortingTable input[data-order="ascending"]::after {
   content: '↓';
 }
 
-.SortingTable input[data-order="descending"]::after {
+#SortingTable input[data-order="descending"]::after {
   content: '↑';
 }
 
-.SortingTable input[data-order]::after {
+#SortingTable input[data-order]::after {
   background: silver;
   font-weight: bold;
 }
@@ -61,8 +61,10 @@ export default function SortingTable() {
   });*/
 
   return (
-    <div className="SortingTable">
-      <h2>Sorting table</h2>
+    <div id="SortingTable">
+      <h2>
+        <a href="#SortingTable">Sorting Table</a>
+      </h2>
       <p>
         This example demonstrates a sort toggle integration using the Fluent
         Table rich content capabilities. The default sort is undefined, upon

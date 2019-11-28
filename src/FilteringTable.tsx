@@ -4,7 +4,7 @@ import { Table, TableRow, TableCell } from "@stardust-ui/react";
 
 export default function FilteringTable() {
   const style = `
-.FilteringTable input {
+#FilteringTable input {
   margin-left: auto;
 }
 `;
@@ -35,8 +35,10 @@ export default function FilteringTable() {
   });
 
   return (
-    <div className="FilteringTable">
-      <h2>Filtering Table</h2>
+    <div id="FilteringTable">
+      <h2>
+        <a href="#FilteringTable">Filtering Table</a>
+      </h2>
       <p>
         This example demonstrates how to use the rich content capabilities of
         the Fluent Table component to attach filtering funnels to each column

@@ -18,21 +18,9 @@ export default function EmbeddingTable() {
       occupation: <Button>Programmer</Button>
     },
     {
-      firstName: (
-        <Dropdown placeholder="…" items={["Tom"]}>
-          Select first name
-        </Dropdown>
-      ),
-      lastName: (
-        <Dropdown placeholder="…" items={["Hubelbauer"]}>
-          Select last name
-        </Dropdown>
-      ),
-      occupation: (
-        <Dropdown placeholder="…" items={["Programmer"]}>
-          Select occupation
-        </Dropdown>
-      )
+      firstName: <Dropdown placeholder="…" items={["Tom"]} />,
+      lastName: <Dropdown placeholder="…" items={["Hubelbauer"]} />,
+      occupation: <Dropdown placeholder="…" items={["Programmer"]} />
     },
     {
       firstName: <Checkbox label="Tom" />,
@@ -47,8 +35,10 @@ export default function EmbeddingTable() {
   ];
 
   return (
-    <div className="SortingTable">
-      <h2>Embedding table</h2>
+    <div id="EmbeddingTable">
+      <h2>
+        <a href="#EmbeddingTable">Embedding Table</a>
+      </h2>
       <p>
         This example demonstrates including rich content in the Fluent Table
         component. Any valid React child can be made the content of a header or

@@ -3,6 +3,7 @@ import React from "react";
 import FilteringTable from "./FilteringTable";
 import SortingTable from "./SortingTable";
 import EmbeddingTable from "./EmbeddingTable";
+import SearchingTable from "./SearchingTable";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <FilteringTable />
       <SortingTable />
       <EmbeddingTable />
+      <SearchingTable />
     </div>
   );
 }
