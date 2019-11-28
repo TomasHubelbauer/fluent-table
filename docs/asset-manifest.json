@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/fluent-table-tools/static/css/main.4c0a0a7a.chunk.css",
-    "main.js": "/fluent-table-tools/static/js/main.cdfff288.chunk.js",
-    "main.js.map": "/fluent-table-tools/static/js/main.cdfff288.chunk.js.map",
+    "main.js": "/fluent-table-tools/static/js/main.ea9ef385.chunk.js",
+    "main.js.map": "/fluent-table-tools/static/js/main.ea9ef385.chunk.js.map",
     "runtime-main.js": "/fluent-table-tools/static/js/runtime-main.2756af90.js",
     "runtime-main.js.map": "/fluent-table-tools/static/js/runtime-main.2756af90.js.map",
-    "static/js/2.9f5a5447.chunk.js": "/fluent-table-tools/static/js/2.9f5a5447.chunk.js",
-    "static/js/2.9f5a5447.chunk.js.map": "/fluent-table-tools/static/js/2.9f5a5447.chunk.js.map",
+    "static/js/2.7d6da1e4.chunk.js": "/fluent-table-tools/static/js/2.7d6da1e4.chunk.js",
+    "static/js/2.7d6da1e4.chunk.js.map": "/fluent-table-tools/static/js/2.7d6da1e4.chunk.js.map",
     "index.html": "/fluent-table-tools/index.html",
-    "precache-manifest.a6b8a36e2a7469842d6c00422b289561.js": "/fluent-table-tools/precache-manifest.a6b8a36e2a7469842d6c00422b289561.js",
+    "precache-manifest.31115393e34a5e0ab22d695891bc95b8.js": "/fluent-table-tools/precache-manifest.31115393e34a5e0ab22d695891bc95b8.js",
     "service-worker.js": "/fluent-table-tools/service-worker.js",
     "static/css/main.4c0a0a7a.chunk.css.map": "/fluent-table-tools/static/css/main.4c0a0a7a.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.2756af90.js",
-    "static/js/2.9f5a5447.chunk.js",
+    "static/js/2.7d6da1e4.chunk.js",
     "static/css/main.4c0a0a7a.chunk.css",
-    "static/js/main.cdfff288.chunk.js"
+    "static/js/main.ea9ef385.chunk.js"
   ]
 }
