@@ -71,5 +71,3 @@ Demonstrates button rich content
 
 Demonstrate filtering on a value which is rendered using a dropdown in its cell
 and updating the filter (by removing the row) when the dropdown changes.
-
-### Document each example

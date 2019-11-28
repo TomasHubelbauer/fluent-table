@@ -1,29 +1,8 @@
 import React, { useState, ChangeEventHandler } from "react";
+import { Key, data, keys, columns } from "./types";
 import { Table, TableRow, TableCell } from "@stardust-ui/react";
 
-type Row = {
-  firstName: string;
-  lastName: string;
-  occupation: string;
-};
-
-type Key = keyof Row;
-
-type Columns = { [key in Key]: Row[key] };
-
-const data: Row[] = [
-  { firstName: "Tom", lastName: "Hubelbauer", occupation: "Programmer" },
-  { firstName: "John", lastName: "Doe", occupation: "Maker" }
-];
-
 export default function FilteringTable() {
-  const columns: Columns = {
-    firstName: "First name",
-    lastName: "Last name",
-    occupation: "Occupation"
-  };
-
-  const keys = Object.keys(columns) as Key[];
   const style = `
 .FilteringTable input {
   margin-left: auto;
@@ -68,8 +47,8 @@ export default function FilteringTable() {
         A way to improve would be to provide a way to define the order of the
         filters, currently, they are always evaluated in the column order.
       </p>
+      <style>{style}</style>
       <Table>
-        <style>{style}</style>
         <TableRow header>
           {keys.map(key => (
             <TableCell key={key}>
