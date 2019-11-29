@@ -72,6 +72,9 @@ export default function SortingTable() {
         and descending and advancing to a different toggle moves the sort to the
         value of that respective toggle.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/SortingTable.tsx">
+        Source code on GitHub
+      </a>
       <style>{style}</style>
       <Table>
         <TableRow header>

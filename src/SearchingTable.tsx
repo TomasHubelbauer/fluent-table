@@ -37,6 +37,9 @@ export default function SearchingTable() {
         of search is left to the user. In this instance, rows where any cell
         includes the search strings are returned.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/SearchingTable.tsx">
+        Source code on GitHub
+      </a>
       <style>{style}</style>
       <Table>
         <input value={search} onChange={handleSearchInputChange} />

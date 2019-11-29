@@ -57,6 +57,9 @@ export default function LoadingTable() {
         immediately asynchronously, the loading indicator is displayed when the
         change is being persisted.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/LoadingTable.tsx">
+        Source code on GitHub
+      </a>
       <style>{style}</style>
       <Table>
         <TableRow header>

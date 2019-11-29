@@ -49,6 +49,9 @@ export default function FilteringTable() {
         A way to improve would be to provide a way to define the order of the
         filters, currently, they are always evaluated in the column order.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/FilteringTable.tsx">
+        Source code on GitHub
+      </a>
       <style>{style}</style>
       <Table>
         <TableRow header>

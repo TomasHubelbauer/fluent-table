@@ -49,6 +49,9 @@ export default function EmbeddingTable() {
         Fluent components Button, Dropdown and Checkbox are demonstrated as
         possible types of rich content.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/EmbeddingTable.tsx">
+        Source code on GitHub
+      </a>
       <Table>
         <TableRow header>
           {keys.map(key => (

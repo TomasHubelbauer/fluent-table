@@ -56,6 +56,9 @@ export default function SelectingTable() {
         a checkbox or a radio in its first cell. This is to enable selecting
         single or multiple items.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/SelectingTable.tsx">
+        Source code on GitHub
+      </a>
       <Table>
         <Checkbox
           label="Multiselect?"

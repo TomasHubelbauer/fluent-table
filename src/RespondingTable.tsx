@@ -41,6 +41,9 @@ export default function RespondingTable() {
           The responsivity repo
         </a>
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/RespondingTable.tsx">
+        Source code on GitHub
+      </a>
       {breakpoints &&
         breakpoints.map((breakpoint, index) => (
           <p key={index}>

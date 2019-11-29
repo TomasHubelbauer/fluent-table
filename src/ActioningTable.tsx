@@ -73,6 +73,9 @@ export default function ActioningTable() {
         a contextual button, which for existing rows deletes the row and for the
         virtual new row persists the row into the collection.
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/ActioningTable.tsx">
+        Source code on GitHub
+      </a>
       <style>{style}</style>
       <Table>
         <TableRow header>

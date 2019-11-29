@@ -121,6 +121,9 @@ export default function ResizingTable() {
           The responsivity repo
         </a>
       </p>
+      <a href="https://github.com/TomasHubelbauer/fluent-table-tools/blob/master/src/ResizingTable.tsx">
+        Source code on GitHub
+      </a>
       <style>
         {style}
         {_columns
